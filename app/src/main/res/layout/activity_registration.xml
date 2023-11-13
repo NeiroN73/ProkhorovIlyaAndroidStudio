@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+
+    <EditText
+        android:id="@+id/username"
+        android:textStyle="bold"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textSize="20dp"
+        android:layout_below="@+id/username"
+        />
+    <EditText
+        android:id="@+id/repassword"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Renter password"
+        android:textSize="20dp"
+        android:layout_below="@+id/password"
+        />
+
+
+    <CheckBox
+        android:id="@+id/agreementСheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="принимаю условия пользования"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/repassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSignUp"
+        android:layout_width="302dp"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:text="зарегистрироваться"
+        android:textSize="20dp"/>
+
+
+
+</RelativeLayout>
