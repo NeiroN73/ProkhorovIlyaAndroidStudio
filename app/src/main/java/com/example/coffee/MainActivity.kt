@@ -20,9 +20,20 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btLr2.setOnClickListener {
+            val intent = Intent(this, ThreadActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.btLr34.setOnClickListener {
             val intent = Intent(this, CameraActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btLr6.setOnClickListener {
+            val intent = Intent(this, glide::class.java)
+            startActivity(intent)
+        }
+
     }
 }
